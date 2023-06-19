@@ -2,6 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="12">
+        <h1>{{ id }}</h1>
         <v-card class="mt-5">
           <v-img height="300px"	src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"></v-img>
           <v-card-text>
@@ -22,9 +23,10 @@
   
   <script>
     export default {
-      data () {
+      props: ['id'],
+      data () { 
         return {
-        }
+        } 	
       }
     }
   </script>

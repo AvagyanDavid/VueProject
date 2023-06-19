@@ -28,9 +28,9 @@
 <script>
   export default {
     computed: {
-	 	  myAds(){
-	 	  	return this.$store.getters.myAds
-	 	  }
-	  }
+      myAds(){
+        return this.$store.getters.myAds
+      }
+    }
   }
 </script>
