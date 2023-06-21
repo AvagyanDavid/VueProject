@@ -7,9 +7,6 @@ import LoginView from '../views/Auth/LoginView.vue'
 import RegistrationView from '../views/Auth/RegistrationView.vue'
 import OrdersView from '../views/User/OrdersView.vue'
 
-
-
-
 const routes = [
   {
     path: '/',
