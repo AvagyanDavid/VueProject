@@ -84,8 +84,8 @@
           promo: this.promo
         }
         console.log(ad)
+        }    
       }
-    },
-  }
+    }
 }
 </script>

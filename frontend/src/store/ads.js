@@ -50,6 +50,16 @@ export default {
       return state.ads.find(ad => ad.id == id)
       }
     }
+  },
+  actions: {
+    createAd({commit},payload){
+        payload.id = Math.random()
+        commit('createAd', payload)
+    },
+  mutations: {
+      createAd(state, payload){
+        state.ads.push(payload)
+      }
+    },
   }
 }
-  
