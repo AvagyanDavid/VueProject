@@ -1,36 +1,36 @@
 export default {
-	state: {
+  state: {
     loading: false,
     error: null
   },
-	mutations: {
-    setLoading(state,payload){
-      state.loading = payload
+  mutations: {
+    setLoading(state, payload) {
+      state.loading = payload;
     },
-    setError(state,payload){
-      state.error = payload
+    setError(state, payload) {
+      state.error = payload;
     },
-    clearError (state){
-      state.error = null
+    clearError(state) {
+      state.error = null;
     }
   },
-	actions: {
-    setLoading({commit},payload){
-      commit('setLoading',payload)
+  actions: {
+    setLoading({commit}, payload) {
+      commit('setLoading', payload);
     },
-    setError ({commit},payload){
-      commit('clearError')
+    setError({commit}, payload) {
+      commit('setError', payload);
     },
-    clearError({commit}){
-      commit('clearError')
+    clearError({commit}) {
+      commit('clearError');
     }
   },
-	getters: {
-    loading (state) {
-      return state.loading
+  getters: {
+    loading(state) {
+      return state.loading;
     },
-    error (state) {
-      return state.error
+    error(state) {
+      return state.error;
     }
   }
 }
